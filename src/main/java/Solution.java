@@ -8,7 +8,7 @@ public class Solution implements Homework {
     @Override
     public String getTheFirstNonIndependentCountryName() {
         return countries.stream()
-                .filter(Country::isIndependent)
+                .filter(country -> !country.isIndependent())
                 .map(Country::getName)
                 .findFirst()
                 .orElseThrow(NoSuchElementException::new);
