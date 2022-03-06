@@ -18,7 +18,7 @@ public class SolutionTest {
     @DisplayName("getTheFirstNonIndependentCountry should return the first non-independent country's name")
     void testGetTheFirstNonIndependentCountryName() {
         var actualResult = solution.getTheFirstNonIndependentCountryName();
-        assertEquals("Afghanistan", actualResult);
+        assertEquals("Åland Islands", actualResult);
     }
 
     @Test
